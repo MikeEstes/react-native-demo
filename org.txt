@@ -1,0 +1,19 @@
+app
+    |-- index.js
+    |-- components
+    |   |-- ComponentName  
+    |   |   |-- ComponentName.js
+    |   |   |-- anotherComponent.js
+    |   |   |-- index.js
+    |   |   |-- styles.js
+    |-- config
+    |   |-- colors.js
+    |   |-- data.js
+    |   |-- router.js
+    |-- helpers
+    |   |-- string.js
+    |-- screens
+        |-- Contacts.js
+        |-- Details.js
+        |-- Me.js
+        |-- NewContact.js
