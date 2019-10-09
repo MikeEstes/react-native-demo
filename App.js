@@ -8,13 +8,7 @@ export default function App() {
       <Button
         id="button1"
         title='Tap Me to Continue'
-        onPress={() => button2.enabled  }
-      />
-      <Button
-        id="button2"
-        title='Tap Me to Continue'
-        disabled
-        onPress={() => Alert.alert('You did it!')}
+        onPress={ () => Alert.alert('I love you!') }
       />
     </View>
   );
