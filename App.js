@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Button, Alert } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>This is placeholder text!</Text>
+      <Text>I've been updated!</Text>
       <Button
         id="button1"
         title='Tap Me to Continue'
@@ -22,3 +22,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+
+
