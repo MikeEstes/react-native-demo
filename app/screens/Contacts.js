@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { FlatList } from 'react-native';
 
-import { contacts } from '../config/data';
-import colors from '../config/colors';
-import { ListItem } from '../components/ListItem';
+import { contacts } from 'app/config/data';
+import colors from 'app/config/colors';
+import { ListItem } from 'app/components/ListItem';
 
 class Contacts extends Component {
   handleRowPress = item => {
