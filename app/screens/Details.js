@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
+
+import { Actions, Header, Info } from 'app/components/UserDetails';
+import colors from 'app/config/colors';
 
 class Details extends Component {
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
-      </View>
-    );
-  }
+    render() {
+        const contact = this.props.navigation.state.params;
+
+        return (
+            <ScrollView style={{ backgroundColor: colors.background }}>
+                <Header {...contact} />
+                <Actions {...contact} />
+                <Info {...contact} />
+            </ScrollView>
+        );
+    }
 }
 export default Details;

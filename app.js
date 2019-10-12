@@ -1,8 +1,14 @@
 import React from 'react';
-import ContactsStack from './app/config/router';
+import { Platform } from 'react-native';
+import { DrawerNavigator, TabNavigator } from './app/config/router';
 
 const App = () => {
-    return <ContactsStack />;
+    if (Platform.OS === 'ios')
+    {
+        return <TabNavigator />;
+    }
+
+    return <DrawerNavigator />;
 };
 
 export default App;
